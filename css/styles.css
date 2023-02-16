@@ -62,6 +62,7 @@ img {
     color: transparent;
     background:linear-gradient(to right, var(--primario) 0%, var(--secundario) 100% );
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 /* HEADER */
@@ -204,4 +205,62 @@ img {
 .texto-sobre-tech p {
     font-size: 2rem;
     line-height: 2;
+}
+
+/* MODELOS */
+.modelos {
+    padding: var(--separacion);
+}
+
+.header-modelos {
+    font-size: 6rem;
+    margin-bottom: var(--separacion);
+}
+.listado-modelos {
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+    .listado-modelos {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+}
+
+.modelo {
+    background-color: var(--grisClaro);
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    color:var(--primario);
+    border-radius: 2rem;
+    min-height: 20rem;
+    background-repeat: no-repeat;
+    background-position: 90%, center;
+    background-size: 15rem;
+}
+.modelo:first-of-type {
+    margin: 0;
+}
+.modelo h3 {
+    font-size: 2.4rem;
+}
+.modelo .precio {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 0;
+}
+.modelo-x {
+    background-image: url(../img/modelo-x.svg);
+}
+.modelo-y {
+    background-image: url(../img/modelo-y.svg);
+}
+.modelo-z{
+    background-image: url(../img/modelo-z.svg);
+    
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+.modelo-z .precio{
+    font-size: 6rem;
 }
