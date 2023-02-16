@@ -12,6 +12,13 @@
     --fuenteSecundaria: 'Lato', sans-serif;
 }
 
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
 body {
     font-family: var(--fuentePrincipal); 
 }
