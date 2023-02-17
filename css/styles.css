@@ -209,7 +209,7 @@ img {
 
 /* MODELOS */
 .modelos {
-    padding: var(--separacion);
+    padding: var(--separacion) 0;
 }
 
 .header-modelos {
@@ -241,10 +241,20 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition-property: transform background-size;
+    transition-duration: 300ms;
 }
+.modelo:hover{
+    transform: scale(1.1);
+    background-size: 30rem;
+}
+
 @media (min-width: 992px) {
     .modelo {
         margin-bottom: 0;
+    }
+    .modelo:hover{
+        
     }
 }
 
