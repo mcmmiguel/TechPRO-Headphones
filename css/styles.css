@@ -326,39 +326,36 @@ img {
 
 /* NEWSLETTER */
 .newsletter {
+
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100%, 70rem;
 }
-
 .notavif.notwebp .newsletter {
-    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%),  url(..//img/newsletter.jpg);
+    background-image: linear-gradient( to bottom, transparent 50%, var(--blanco) 0% ), url(../img/newsletter.jpg) ;
 }
 
 .webp .newsletter {
-    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%),  url(..//img/newsletter.webp);
+    background-image: linear-gradient( to bottom, transparent 50%, var(--blanco) 0% ), url(../img/newsletter.webp) ;
 }
 
 .avif .newsletter {
-    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%),  url(..//img/newsletter.avif);
+    background-image: linear-gradient( to bottom, transparent 50%, var(--blanco) 0% ), url(../img/newsletter.avif) ;
 }
-
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
     .newsletter {
-        background-position: center, -10rem 0rem;
-        background-size: 100%, 90rem;
+        background-position: center, -21rem 0rem;
+        background-size: 100%, 100rem;
         padding: 10rem 0;
     }
     .notavif.notwebp .newsletter {
-        background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%),  url(..//img/newsletter.jpg);
+        background-image: linear-gradient( to right, transparent 50%, var(--blanco) 0% ), url(../img/newsletter.jpg) ;
     }
-    
     .webp .newsletter {
-        background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%),  url(..//img/newsletter.webp);
+        background-image: linear-gradient( to right, transparent 50%, var(--blanco) 0% ), url(../img/newsletter.webp) ;
     }
-    
     .avif .newsletter {
-        background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%),  url(..//img/newsletter.avif);
+        background-image: linear-gradient( to right, transparent 50%, var(--blanco) 0% ), url(../img/newsletter.avif) ;
     }
 }
 @media (min-width: 2200px) {
