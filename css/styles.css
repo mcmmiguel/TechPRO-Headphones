@@ -91,6 +91,7 @@ img {
         padding: 0;
     }
 }
+
 .texto-header p {
     margin: 0;
 }
@@ -107,16 +108,25 @@ img {
     margin: 0;
 
 }
+@media (min-width: 320px) {
+    .nombre-producto, .precio-producto{
+        font-size: 4rem;
+    }
+}
 @media (min-width: 768px) {
     .nombre-producto {
         font-size: 10rem;
         line-height: 1;
     }
 }
-
 .precio-producto span {
     font-size: 6rem;
     font-weight: 900;
+}
+@media (min-width: 320px) {
+    .precio-producto span{
+        font-size: 4rem;
+    }
 }
 
 /* ICONOS */
@@ -315,7 +325,7 @@ img {
 }
 .contenido-newsletter {
     display: grid;
-    grid-template-rows: repeat(2, 30rem);
+    grid-template-rows: repeat(2, 1fr);
     gap: var(--separacion);
 }
 @media (min-width: 768px) {
@@ -347,4 +357,19 @@ img {
     font-size: 2rem;
     font-weight: 900;
     border: none;
+}
+
+/* FOOTER */
+.footer p {
+    text-transform: uppercase;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2rem;
+    padding: 2rem;
+    color: var(--primario);
+}
+
+@media (min-width: 320px) {
+    .footer {
+        margin: 0;
+    }
 }
